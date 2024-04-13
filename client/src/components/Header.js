@@ -13,7 +13,7 @@ export default function Header() {
     const open = Boolean(anchorEl);
     const logoutuser = async () => {
         let token = localStorage.getItem("usersdatatoken");
-        const res = await fetch("/logout", {
+        const res = await fetch("https://authentication-system-using-mern-api.vercel.app/logout", {
             method: "GET",
             headers: {
                 "Content-Type": "application/json",
