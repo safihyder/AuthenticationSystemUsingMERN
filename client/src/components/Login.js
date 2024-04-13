@@ -30,7 +30,7 @@ const Login = () => {
     }else if(password.length<6){
       alert("Password must be atleast 6 character")
     }else{
-      const data=await fetch("/login",{
+      const data=await fetch("https://authentication-system-using-mern-api.vercel.app/login",{
         method:"POST",
         headers:{
           "Content-Type":"application/json"
