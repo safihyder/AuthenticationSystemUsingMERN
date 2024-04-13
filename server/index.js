@@ -10,7 +10,7 @@ res.status(200).json("Served Created");
 })
 app.use(express.json())
 app.use(cors({
-    origin:['https://image-upload-project-using-mern.vercel.app'],
+    origin:['https://authentication-system-using-mern.vercel.app'],
     methods:['POST','GET','DELETE'],
     credentials:true
 },
