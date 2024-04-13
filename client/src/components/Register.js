@@ -40,7 +40,7 @@ alert("Enter your email");
     }else if(password !== cpassword){
       alert("Password doesn't match");
     }else{
-      const data=await fetch("/register",{
+      const data=await fetch("https://authentication-system-using-mern-api.vercel.app/register",{
         method:"POST",
         headers:{
           "Content-type":"application/json"
