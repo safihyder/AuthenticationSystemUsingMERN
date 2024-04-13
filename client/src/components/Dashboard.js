@@ -13,7 +13,7 @@ const Dashboard = () => {
     const history=useNavigate();
     const DashboardValid = async () => {
         let token = localStorage.getItem("usersdatatoken");
-        const res = await fetch("/validuser", {
+        const res = await fetch("https://authentication-system-using-mern-api.vercel.app/validuser", {
             method: "GET",
             headers: {
                 "Content-Type": "application/json",
