@@ -5,9 +5,9 @@ const cors=require("cors")
 require("./db/conn")
 const router=require("./routes/router")
 const port = 5000;
-// app.get('/',(req,res)=>{
-// res.status(200).json("Served Created");
-// })
+app.get('/',(req,res)=>{
+res.status(200).json("Served Created");
+})
 app.use(express.json())
 app.use(cors({
     origin:['https://image-upload-project-using-mern.vercel.app'],
